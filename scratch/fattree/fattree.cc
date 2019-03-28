@@ -72,14 +72,14 @@ void mycallback(uint32_t switch_id, Ptr<const QueueBase> qb, Ptr<const Packet> p
 	}else{
 		return;
 	}
-	std::cout << "srcPort: " << pkt_dgst.srcPort << ", dstPort: " << pkt_dgst.dstPort << ", ";
+	//std::cout << "srcPort: " << pkt_dgst.srcPort << ", dstPort: " << pkt_dgst.dstPort << ", ";
 
 	pkt_dgst.proto = ipv4_protocol;
 	Ipv4Address saddr = iph.GetSource(), daddr = iph.GetDestination();
 	pkt_dgst.srcAddr = saddr.Get();
 	pkt_dgst.dstAddr = daddr.Get();
-	std::cout << "srcaddr: " << saddr << ", dstaddr: " << daddr << ", ";
-	std::cout << "protocol: " << (int)pkt_dgst.proto <<  std::endl;
+	//std::cout << "srcaddr: " << saddr << ", dstaddr: " << daddr << ", ";
+	//std::cout << "protocol: " << (int)pkt_dgst.proto <<  std::endl;
 
 
 	keysight(switch_id, qb->GetNPackets(), pkt_dgst);
@@ -182,17 +182,17 @@ void Fattree::setup(){
 			}
 		}
 
-		for (unsigned edge_idx = 0; edge_idx < m_k/2; ++edge_idx){
-			NodeContainer tor;
-			tor.Create(m_k/2);
-			host_stack.Install(tor);
-			hosts.Add(tor);
+		//for (unsigned edge_idx = 0; edge_idx < m_k/2; ++edge_idx){
+		//	NodeContainer tor;
+		//	tor.Create(m_k/2);
+		//	host_stack.Install(tor);
+		//	hosts.Add(tor);
 
-			tor.Add(pods[i].Get(edge_idx));
-			dvc = csma_factory.Install(tor);
-			ipv4addr_factory.SetBase(Ipv4Address(ipv4_subnet_generator()), "255.255.255.0");
-			ipv4addr_factory.Assign(dvc);
-		}
+		//	tor.Add(pods[i].Get(edge_idx));
+		//	dvc = csma_factory.Install(tor);
+		//	ipv4addr_factory.SetBase(Ipv4Address(ipv4_subnet_generator()), "255.255.255.0");
+		//	ipv4addr_factory.Assign(dvc);
+		//}
 	}
 
 	//cores
@@ -222,6 +222,19 @@ void Fattree::setup(){
 		}
 	}
 
+	for (unsigned i = 0; i < m_k; ++i){
+		for (unsigned edge_idx = 0; edge_idx < m_k/2; ++edge_idx){
+			NodeContainer tor;
+			tor.Create(m_k/2);
+			host_stack.Install(tor);
+			hosts.Add(tor);
+
+			tor.Add(pods[i].Get(edge_idx));
+			dvc = csma_factory.Install(tor);
+			ipv4addr_factory.SetBase(Ipv4Address(ipv4_subnet_generator()), "255.255.255.0");
+			ipv4addr_factory.Assign(dvc);
+		}
+	}
 	Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
 }
 Fattree::Fattree(uint32_t k)
@@ -262,6 +275,14 @@ int main (int argc, char **argv){
 	Config::SetDefault("ns3::Ipv4GlobalRouting::RandomEcmpRouting",BooleanValue(1));
 
 	Fattree ft(k);
+
+	for (unsigned pod_idx = 0; pod_idx < k; ++pod_idx){
+		for (unsigned tor_idx = 0; tor_idx < k/2; ++tor_idx){
+			for (unsigned idx = 0; idx < k/2; ++idx){
+				std::cout << ft.GetHost(pod_idx, tor_idx, idx)->GetId() << std::endl;
+			}
+		}
+	}
 
 	//ft.getK();
 	//std::cout << ft.ipv4_subnet_generator() << std::endl;
