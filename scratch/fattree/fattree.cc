@@ -12,7 +12,7 @@ using namespace ns3;
 NS_LOG_COMPONENT_DEFINE("fattree");
 
 //print out the 5-tuple of every packet
-#define DEBUG_LABEL 0
+#define DEBUG_LABEL 1
 
 //Simulation duration
 #define SIMULATION_TIME 10.0
@@ -226,12 +226,6 @@ void Fattree::setup(){
 	em->SetAttribute ("ErrorRate", DoubleValue (AE_errorRate));
 	p2p_factory.SetDeviceAttribute("ReceiveErrorModel", PointerValue(em));
 
-	//Edge <-> Host
-	csma_factory.SetChannelAttribute ("DataRate", StringValue (EH_dataRate));
-	csma_factory.SetChannelAttribute ("Delay", StringValue(EH_delay));
-	csma_factory.SetDeviceAttribute ("Mtu", UintegerValue(1518));
-	em->SetAttribute ("ErrorRate", DoubleValue (EH_errorRate));
-	csma_factory.SetDeviceAttribute("ReceiveErrorModel", PointerValue(em));
 
 	for (unsigned i = 0; i < m_k; ++i){
 
@@ -295,29 +289,55 @@ void Fattree::setup(){
 		}
 	}
 
+	//Edge <-> Host
+	csma_factory.SetChannelAttribute ("DataRate", StringValue (EH_dataRate));
+	csma_factory.SetChannelAttribute ("Delay", StringValue(EH_delay));
+	csma_factory.SetDeviceAttribute ("Mtu", UintegerValue(1518));
+	em->SetAttribute ("ErrorRate", DoubleValue (EH_errorRate));
+	csma_factory.SetDeviceAttribute("ReceiveErrorModel", PointerValue(em));
+
 	//TODO:need to switch to p2p device for tracing #pkts_in_queue
-	//for (unsigned i = 0; i < m_k; ++i){//pods
-	//	for (unsigned edge_idx = 0; edge_idx < m_k/2; ++edge_idx){//edge switches
-	//	}
-	//}
-	for (unsigned i = 0; i < m_k; ++i){
-		for (unsigned edge_idx = 0; edge_idx < m_k/2; ++edge_idx){
+	p2p_factory.SetDeviceAttribute("DataRate", StringValue(EH_dataRate));
+	p2p_factory.SetChannelAttribute("Delay", StringValue(EH_delay));
+	em->SetAttribute ("ErrorRate", DoubleValue (EH_errorRate));
+	p2p_factory.SetDeviceAttribute("ReceiveErrorModel", PointerValue(em));
+	for (unsigned pod_idx = 0; pod_idx < m_k; ++pod_idx){//pods
+		for (unsigned edge_idx = 0; edge_idx < m_k/2; ++edge_idx){//edge switches
 			NodeContainer tor;
 			tor.Create(m_k/2);
 			host_stack.Install(tor);
 			hosts.Add(tor);
-
-			tor.Add(pods[i].Get(edge_idx));
-			dvc = csma_factory.Install(tor);
-			txq = dvc.Get(m_k/2)->GetObject<CsmaNetDevice>()->GetQueue(); //NOTICE: all hosts connected to the same egde switch share a same csma queue. 
-			txq->TraceConnectWithoutContext("Enqueue",MakeBoundCallback(mycallback_for_csma, dvc.Get(m_k/2)->GetNode()->GetId(), txq->GetObject<QueueBase>()));
+			for(unsigned host_idx = 0; host_idx < m_k/2; ++host_idx){
+				dvc = p2p_factory.Install(pods[pod_idx].Get(edge_idx), tor.Get(host_idx));
+				ipv4addr_factory.SetBase(Ipv4Address(ipv4_subnet_generator()), "255.255.255.0");
+				ipv4addr_factory.Assign(dvc);
+				txq = dvc.Get(0)->GetObject<PointToPointNetDevice>()->GetQueue();
+				txq->TraceConnectWithoutContext("Dequeue",MakeBoundCallback(mycallback, dvc.Get(0)->GetNode()->GetId(), txq->GetObject<QueueBase>()));
 #if DEBUG_LABEL
-			txq->GetObject<QueueBase>()->TraceConnectWithoutContext("PacketsInQueue", MakeBoundCallback(getQueueSize_bounded, dvc.Get(m_k/2)->GetNode()->GetId()));
+				txq->GetObject<QueueBase>()->TraceConnectWithoutContext("PacketsInQueue", MakeCallback(getQueueSize));
 #endif
-			ipv4addr_factory.SetBase(Ipv4Address(ipv4_subnet_generator()), "255.255.255.0");
-			ipv4addr_factory.Assign(dvc);
+			}
+
 		}
 	}
+	//	for (unsigned i = 0; i < m_k; ++i){
+	//		for (unsigned edge_idx = 0; edge_idx < m_k/2; ++edge_idx){
+	//			NodeContainer tor;
+	//			tor.Create(m_k/2);
+	//			host_stack.Install(tor);
+	//			hosts.Add(tor);
+	//
+	//			tor.Add(pods[i].Get(edge_idx));
+	//			dvc = csma_factory.Install(tor);
+	//			txq = dvc.Get(m_k/2)->GetObject<CsmaNetDevice>()->GetQueue(); //NOTICE: all hosts connected to the same egde switch share a same csma queue. 
+	//			txq->TraceConnectWithoutContext("Enqueue",MakeBoundCallback(mycallback_for_csma, dvc.Get(m_k/2)->GetNode()->GetId(), txq->GetObject<QueueBase>()));
+	//#if DEBUG_LABEL
+	//			txq->GetObject<QueueBase>()->TraceConnectWithoutContext("PacketsInQueue", MakeBoundCallback(getQueueSize_bounded, dvc.Get(m_k/2)->GetNode()->GetId()));
+	//#endif
+	//			ipv4addr_factory.SetBase(Ipv4Address(ipv4_subnet_generator()), "255.255.255.0");
+	//			ipv4addr_factory.Assign(dvc);
+	//		}
+	//	}
 	Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
 }
 Fattree::Fattree(uint32_t k)
@@ -370,6 +390,7 @@ int main (int argc, char **argv){
 	Config::SetDefault ("ns3::TcpL4Protocol::SocketType", StringValue ("ns3::TcpNewReno")); //TcpBic
 
 	Fattree ft(k);
+	getAddr(ft.GetHost(0,0,0)).Print(std::cout);
 
 	//for how to understand traffic in DCN, TO BE READ.
 	//https://conferences.sigcomm.org/sigcomm/2009/workshops/wren/papers/p65.pdf
