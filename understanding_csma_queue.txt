@@ -1,0 +1,344 @@
+Waf: Entering directory `/home/zedd/ns3/ns-allinone-3.29/ns-3.29/build/debug'
+[2676/2733] Compiling scratch/fattree/fattree.cc
+[2693/2733] Linking build/debug/scratch/fattree/fattree
+Waf: Leaving directory `/home/zedd/ns3/ns-allinone-3.29/ns-3.29/build/debug'
+Build commands will be stored in build/debug/compile_commands.json
+'build' finished successfully (6.790s)
+installing flows finished.
+switch id: 12, queuesize: 0, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49153, srcaddr: 10.1.33.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49153, srcaddr: 10.1.33.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49153, srcaddr: 10.1.33.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.37.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.34.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.36.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.33.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.35.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.40.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.33.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.38.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.37.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 3
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.34.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 3, 4
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.36.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 4, 3
+switch id: 12, queuesize: 3, 2
+switch id: 12, queuesize: 2, 3
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.40.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 3, 4
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.40.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 4, 3
+switch id: 12, queuesize: 3, 2
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.34.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.34.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.38.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.35.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 3
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.38.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 3, 4
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.35.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 4, 3
+switch id: 12, queuesize: 3, 2
+switch id: 12, queuesize: 2, 3
+switch id: 12, srcPort: 80, dstPort: 49153, srcaddr: 10.1.33.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 3, 2
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49154, srcaddr: 10.1.33.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49158, srcaddr: 10.1.35.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.36.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.36.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 80, dstPort: 49155, srcaddr: 10.1.34.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49159, srcaddr: 10.1.36.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49161, srcaddr: 10.1.37.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49164, srcaddr: 10.1.38.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.37.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.37.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49157, srcaddr: 10.1.35.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.36.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49156, srcaddr: 10.1.34.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.36.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.37.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 2, 3
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.37.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 3, 2
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.37.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.37.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 80, dstPort: 49155, srcaddr: 10.1.34.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 2, 3
+switch id: 12, srcPort: 80, dstPort: 49163, srcaddr: 10.1.38.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 3, 4
+switch id: 12, srcPort: 80, dstPort: 49158, srcaddr: 10.1.35.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 4, 3
+switch id: 12, queuesize: 3, 4
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.36.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 4, 3
+switch id: 12, queuesize: 3, 2
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49157, srcaddr: 10.1.35.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49167, srcaddr: 10.1.40.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49153, srcaddr: 10.1.33.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49162, srcaddr: 10.1.37.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49153, srcaddr: 10.1.33.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.34.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.34.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.35.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.35.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49164, srcaddr: 10.1.38.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.34.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.34.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49168, srcaddr: 10.1.40.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.40.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49162, srcaddr: 10.1.37.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.40.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 80, dstPort: 49159, srcaddr: 10.1.36.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.33.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 80, dstPort: 49156, srcaddr: 10.1.34.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 3
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.33.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 3, 2
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 80, dstPort: 49153, srcaddr: 10.1.33.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 80, dstPort: 49159, srcaddr: 10.1.36.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 80, dstPort: 49158, srcaddr: 10.1.35.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.34.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.34.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.33.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.33.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.38.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49161, srcaddr: 10.1.37.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49160, srcaddr: 10.1.36.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.38.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49155, srcaddr: 10.1.34.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.38.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.38.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.37.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.40.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49161, srcaddr: 10.1.37.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.40.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.35.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.37.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.35.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.34.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.34.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.36.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.36.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.40.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.40.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49155, srcaddr: 10.1.34.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49162, srcaddr: 10.1.37.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49159, srcaddr: 10.1.36.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49158, srcaddr: 10.1.35.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49167, srcaddr: 10.1.40.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49156, srcaddr: 10.1.34.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49154, srcaddr: 10.1.33.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.38.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.38.2, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49155, srcaddr: 10.1.34.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.40.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 2
+switch id: 12, srcPort: 49165, dstPort: 80, srcaddr: 10.1.40.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 2, 1
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49164, srcaddr: 10.1.38.2, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.35.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.35.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 80, dstPort: 49157, srcaddr: 10.1.35.1, dstaddr: 10.1.39.1, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.37.1, dstaddr: 10.1.39.2, protocol: 6
+switch id: 12, queuesize: 1, 0
+switch id: 12, queuesize: 0, 1
+switch id: 12, srcPort: 49166, dstPort: 80, srcaddr: 10.1.37.1, dstaddr: 10.1.39.2, protocol: 6
